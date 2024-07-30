@@ -1,0 +1,162 @@
+body {
+    background-color: #444;
+    color: #fff;
+    margin: 0;
+    padding: 0 50px 50px;
+}
+
+table {
+    margin-bottom: 50px;
+}
+
+table > tbody > tr > td,
+table > tbody > tr > th {
+    border: 1px solid #000;
+}
+
+/**
+ * Common
+ */
+.one {
+    border: 1px solid #000;
+}
+
+.two {
+    border: 1px solid #f00;
+}
+
+.three {
+    border: 1px solid #0f0;
+}
+
+.four {
+    border: 1px solid #00f;
+}
+
+.five {
+    border: 1px solid #0ff;
+}
+
+.six {
+    border: 1px solid #f0f;
+}
+
+.seven {
+    border: 1px solid #fff;
+}
+
+/**
+ * Flexbox
+ */
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.flexbox-container div {
+    flex: 1 100%;
+}
+
+/**
+ * Fancy flexbox example
+ */
+.flexbox-container.fancy .one {
+    flex: 1;
+    order: 1;
+}
+
+.flexbox-container.fancy .two {
+    flex: 1;
+    order: 3;
+}
+
+.flexbox-container.fancy .three {
+    flex: 3;
+    order: 4;
+}
+
+.flexbox-container.fancy .four {
+    flex: 1 100%;
+    order: 2;
+}
+
+.flexbox-container.fancy .five {
+    flex: 1;
+    order: 5;
+}
+
+.flexbox-container.fancy .six {
+    order: 6;
+}
+
+/**
+ * Grid
+ */
+.grid-container {
+    display: grid;
+    gap: 10px;
+}
+
+.grid-container.normal {
+    grid-template-columns: 1fr 1fr; /* Fixed repeat! */
+}
+
+/**
+ * What does the > mean?
+ */
+.grid-container > div {
+    padding: 15px;
+}
+
+/**
+ * Fancy grid example
+ */
+.grid-container.fancy .one {
+    /*grid-column: 1 / 3;*/
+    grid-column-end: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-row-start: 1;
+}
+
+.grid-container.fancy .two {
+    border: 1px solid #f00;
+    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-row-start: 1;
+}
+
+.grid-container.fancy .three {
+    border: 1px solid #0f0;
+    grid-column-end: 1;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-row-start: 2;
+}
+
+.grid-container.fancy .four {
+    border: 1px solid #00f;
+    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-row-start: 3;
+}
+
+.grid-container.fancy .five {
+    border: 1px solid #0ff;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-row-start: 4;
+}
+
+.grid-container.fancy .six {
+    border: 1px solid #f0f;
+    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-row-end: 4;
+    grid-row-start: 4;
+}
